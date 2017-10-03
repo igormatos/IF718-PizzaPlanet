@@ -18,7 +18,7 @@ $(()=>{
         sabor1: metade1.val(),
         sabor2: metade2.val(),
         borda: borda.val(),
-        cliente: 1
+        cliente: getCookie('usuario[id]')
       }
 
       post('/pedido', data, function(retorno){
